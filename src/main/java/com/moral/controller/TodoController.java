@@ -44,7 +44,7 @@ public class TodoController extends ActionSupport implements ServletRequestAware
     public String save() {
         Todo todo = todoService.selectTodo(Integer.valueOf(request.getParameter("id")));
         todo.setTitle(request.getParameter("title"));
-        todoService.updateTitle(todo);
+        todoService.updateTodo(todo);
         return "save";
     }
 
@@ -57,7 +57,7 @@ public class TodoController extends ActionSupport implements ServletRequestAware
     public String finish() {
         Todo todo = todoService.selectTodo(Integer.valueOf(request.getParameter("id")));
         todo.setFinished(Integer.valueOf(request.getParameter("status")));
-        todoService.updateStatus(todo);
+        todoService.updateTodo(todo);
         return "finish";
     }
 

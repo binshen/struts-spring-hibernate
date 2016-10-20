@@ -54,12 +54,7 @@ public class TodoDaoImpl implements TodoDao {
         return 1;
     }
 
-    public int updateTitle(Todo todo) {
-        template.saveOrUpdate(todo);
-        return 1;
-    }
-
-    public int updateStatus(Todo todo) {
+    public int updateTodo(Todo todo) {
         template.saveOrUpdate(todo);
         return 1;
     }

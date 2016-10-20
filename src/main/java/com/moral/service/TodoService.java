@@ -34,11 +34,7 @@ public class TodoService {
         return todoDao.deleteTodo(todo);
     }
 
-    public int updateTitle(Todo todo) {
-        return todoDao.updateTitle(todo);
-    }
-
-    public int updateStatus(Todo todo) {
-        return todoDao.updateStatus(todo);
+    public int updateTodo(Todo todo) {
+        return todoDao.updateTodo(todo);
     }
 }
