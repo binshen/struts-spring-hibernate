@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="struts-spring-hibernate:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="struts-spring-hibernate.war">
+      <element id="artifact" artifact-name="struts-spring-hibernate:war exploded" />
+    </root>
+  </artifact>
+</component>
